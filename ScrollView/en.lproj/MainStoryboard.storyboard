@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="2" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="JIv-Jx-nSA">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="00006001.png" translatesAutoresizingMaskIntoConstraints="NO" id="pGw-ib-Siu">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" type="user" id="s8g-6B-1Qn"/>
+                                            <constraint firstAttribute="width" constant="600" type="user" id="wpc-6x-ZFd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pGw-ib-Siu" secondAttribute="bottom" type="user" id="Sss-br-BO4"/>
+                                    <constraint firstAttribute="trailing" secondItem="pGw-ib-Siu" secondAttribute="trailing" type="user" id="a4m-fT-ODf"/>
+                                    <constraint firstItem="pGw-ib-Siu" firstAttribute="top" secondItem="JIv-Jx-nSA" secondAttribute="top" type="user" id="wgi-hk-jze"/>
+                                    <constraint firstItem="pGw-ib-Siu" firstAttribute="leading" secondItem="JIv-Jx-nSA" secondAttribute="leading" type="user" id="zTx-6E-ORc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="hgn-i1-wGe"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JIv-Jx-nSA" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="4oI-eE-nQJ"/>
+                            <constraint firstItem="JIv-Jx-nSA" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="9FK-6V-cwq"/>
+                            <constraint firstItem="JIv-Jx-nSA" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="dHY-hl-sBH"/>
+                            <constraint firstItem="JIv-Jx-nSA" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="xIj-YJ-tZs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pGw-ib-Siu" id="ZFe-z3-IyB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="00006001.png" width="350" height="402"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
